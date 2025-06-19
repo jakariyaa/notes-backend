@@ -6,6 +6,9 @@ import { errorHandler, unknownEndpoint } from "./app/utils/middlewares";
 const app: Application = express();
 app.use(express.json());
 
+app.get("/", (req: Request, res: Response) => {
+  res.send("Hello World!");
+});
 app.use("/api/notes", notesRouter);
 app.use("/api/users", usersRouter);
 
