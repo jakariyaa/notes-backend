@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "lint": "npx eslint .",
-    "build": "tsc",
-    "start": "node ./dist/server.js"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
